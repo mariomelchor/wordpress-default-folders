@@ -59,6 +59,32 @@ textarea {
 	text-shadow: none;
 }
 
+
+/*------------------------------------*\
+	#Headings
+\*------------------------------------*/
+
+/*------------------------------------*\
+	#Widgets
+\*------------------------------------*/
+
+.site-sidebar .search-form {
+	padding: 1.25rem;
+	border-radius: 3px;
+	background: #ededed;
+}
+.site-sidebar .widget_search .search-field,
+.site-sidebar .widget_search .search-submit {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: block;
+	box-sizing: border-box;
+}
+.site-sidebar .widget_search .search-field {
+	background: #fff;
+}
+
 /*------------------------------------*\
 	#Helper Classes
 \*------------------------------------*/
@@ -149,10 +175,6 @@ textarea {
 }
 
 /*------------------------------------*\
-	#Misc Classes
-\*------------------------------------*/
-
-/*------------------------------------*\
 	#Buttons
 \*------------------------------------*/
 
@@ -226,6 +248,64 @@ input[type="search"] {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
+}
+
+/*------------------------------------*\
+	#Misc Classes
+\*------------------------------------*/
+
+/*------------------------------------*\
+	#Underscores
+\*------------------------------------*/
+
+.entry-meta,
+.entry-footer {
+	font-size: .875rem;
+	color: #666;
+}
+.entry-meta a,
+.entry-footer a {
+	color: inherit;
+}
+.entry-footer a {
+	display: inline-block;
+	margin-right: 5px;
+}
+.posts-navigation a,
+.post-navigation a {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	padding: .5rem;
+	display: inline-block;
+	background: #ededed;
+}
+.posts-navigation .nav-previous a:before,
+.post-navigation .nav-previous a:before,
+.posts-navigation .nav-next a:after,
+.post-navigation .nav-next a:after {
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.posts-navigation .nav-previous a:before,
+.post-navigation .nav-previous a:before {
+	content: '←';
+	padding-right: 3px;
+	border-right: solid 1px #fff;
+}
+.posts-navigation .nav-next a:after,
+.post-navigation .nav-next a:after {
+	content: '→';
+	padding-left: 3px;
+	border-left: solid 1px #fff;
+}
+
+@media screen and ( max-width: 520px ) {
+	.posts-navigation a,
+	.post-navigation a {
+		display: block;
+	}
 }
 
 /*------------------------------------*\
