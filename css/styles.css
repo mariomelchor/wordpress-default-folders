@@ -117,6 +117,21 @@ textarea {
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
+
+@media screen and (max-width: 767px) {
+	.media-left,
+	.alignleft,
+	.media-right,
+	.alignright {
+		float: none;
+		display: block;
+		margin-top: 10px;
+		margin-right: 0;
+		margin-bottom: 10px;
+		margin-left: 0;
+	}
+}
+
 .media-center {
 	clear: both;
 	display: block;
@@ -305,24 +320,6 @@ input[type="search"] {
 	.posts-navigation a,
 	.post-navigation a {
 		display: block;
-	}
-}
-
-/*------------------------------------*\
-	#Media Queries
-\*------------------------------------*/
-
-@media screen and (max-width: 767px) {
-	.media-left,
-	.alignleft,
-	.media-right,
-	.alignright {
-		float: none;
-		display: block;
-		margin-top: 10px;
-		margin-right: 0;
-		margin-bottom: 10px;
-		margin-left: 0;
 	}
 }
 
