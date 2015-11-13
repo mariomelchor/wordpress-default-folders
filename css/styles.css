@@ -55,6 +55,25 @@ textarea {
 	background: #b3d4fc;
 	text-shadow: none;
 }
+table, th, td {
+	border: 1px solid #eaeaea;
+}
+table {
+	border-width: 1px 0 0 1px;
+	table-layout: fixed;
+	width: 100%;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+th {
+	font-weight: bold;
+}
+th, td {
+	border-width: 0 1px 1px 0;
+	padding: 0.4em;
+}
 ::selection {
 	background: #b3d4fc;
 	text-shadow: none;
