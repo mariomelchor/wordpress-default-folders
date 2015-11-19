@@ -1,9 +1,10 @@
-function theme_setup() {
-/*
- * This theme styles the visual editor to resemble the theme style,
- */
+function dhali_setup() {
+	/*
+	 * This theme styles the visual editor to resemble the theme style,
+	 */
 	add_editor_style( array( 'css/editor-style.css' ) );
-add_action( 'after_setup_theme', 'theme_setup' );
+}
+add_action( 'after_setup_theme', 'dhali_setup' );
 
 /**
  * Load Simplegrid shortcode generator file.
