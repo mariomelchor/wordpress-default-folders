@@ -10,3 +10,13 @@ add_action( 'after_setup_theme', 'dhali_setup' );
  * Load Simplegrid shortcode generator file.
  */
 require get_template_directory() . '/inc/simplegrid.php';
+
+/**
+ * Enable automatic updates for plugins
+ */
+add_filter('auto_update_plugin', '__return_true');
+
+/**
+ * Enable automatic updates for themes
+ */
+add_filter('auto_update_theme', '__return_true');
