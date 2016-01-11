@@ -12,6 +12,11 @@ add_action( 'after_setup_theme', 'dhali_setup' );
 require get_template_directory() . '/inc/simplegrid.php';
 
 /**
+ * Required Plugins.
+ */
+require get_template_directory() . '/inc/required-plugins.php';
+
+/**
  * Enable automatic updates for plugins
  */
 add_filter('auto_update_plugin', '__return_true');
