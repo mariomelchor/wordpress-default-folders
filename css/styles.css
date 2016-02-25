@@ -48,6 +48,10 @@ hr {
 figure {
 	margin: 0;
 }
+img {
+  height: auto;
+  max-width: 100%;
+}
 textarea {
 	resize: vertical;
 }
