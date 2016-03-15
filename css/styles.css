@@ -313,43 +313,65 @@ input[type="search"] {
 	display: inline-block;
 	margin-right: 5px;
 }
-.post-navigation {
-	text-align: center;
-}
-.post-navigation .nav-previous,
-.post-navigation .nav-next {
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 5px;
-}
 .posts-navigation a,
-.post-navigation a {
-	font-weight: bold;
+.post-navigation a,
+.comment-navigation a {
 	text-transform: uppercase;
+	font-weight: bold;
 	text-decoration: none;
-	padding: .5rem 1rem;
+	padding: 10px;
 	display: inline-block;
 	background: #ededed;
 }
 .posts-navigation .nav-previous a:before,
 .post-navigation .nav-previous a:before,
+.comment-navigation .nav-previous a:before,
 .posts-navigation .nav-next a:after,
-.post-navigation .nav-next a:after {
+.post-navigation .nav-next a:after,
+.comment-navigation .nav-next a:after {
 	display: inline-block;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 .posts-navigation .nav-previous a:before,
-.post-navigation .nav-previous a:before {
+.post-navigation .nav-previous a:before,
+.comment-navigation .nav-previous a:before {
 	content: '←';
 	padding-right: 5px;
 	border-right: solid 1px #fff;
 }
 .posts-navigation .nav-next a:after,
-.post-navigation .nav-next a:after {
+.post-navigation .nav-next a:after,
+.comment-navigation .nav-next a:after {
 	content: '→';
 	padding-left: 5px;
 	border-left: solid 1px #fff;
+}
+
+@media screen and ( max-width: 520px ) {
+	.posts-navigation a,
+	.post-navigation a,
+	.comment-navigation a {
+		display: block;
+	}
+}
+.comment-form label {
+	display: block;
+	text-transform: uppercase;
+}
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+	width: 100%;
+}
+.comment-form .required {
+	color: red;
+}
+.comment-body {
+	border-left: solid 3px #ddd;
+	padding-left: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /*------------------------------------*\
