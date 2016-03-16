@@ -348,12 +348,24 @@ input[type="search"] {
 }
 
 @media screen and ( max-width: 520px ) {
+	.posts-navigation .nav-next,
+	.post-navigation .nav-next,
+	.comment-navigation .nav-next,
+	.posts-navigation .nav-previous,
+	.post-navigation .nav-previous,
+	.comment-navigation .nav-previous {
+		float: none;
+		width: 100%;
+		margin-top: 3px;
+		margin-bottom: 5px;
+	}
 	.posts-navigation a,
 	.post-navigation a,
 	.comment-navigation a {
 		display: block;
 	}
 }
+
 .comments-area label {
 	display: block;
 	text-transform: uppercase;
