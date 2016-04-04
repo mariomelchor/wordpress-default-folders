@@ -97,6 +97,9 @@ th, td {
 	border-radius: 3px;
 	background: #ededed;
 }
+.site-sidebar .widget_search label {
+	display: block;
+}
 .site-sidebar .widget_search .search-field,
 .site-sidebar .widget_search .search-submit {
 	width: 100%;
