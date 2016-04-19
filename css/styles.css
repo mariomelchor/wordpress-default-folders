@@ -117,17 +117,6 @@ th, td {
 	#List
 \*------------------------------------*/
 
-.list {
-	margin: 0;
-	padding: 0;
-}
-.list li {
-	list-style: none;
-}
-.list-inline li {
-	float: left;
-	display: inline;
-}
 .list-bullet li {
 	padding: 4px 0;
 	display: list-item;
