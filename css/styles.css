@@ -55,10 +55,6 @@ img {
 textarea {
 	resize: vertical;
 }
-::-moz-selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
 table, th, td {
 	border: 1px solid #eaeaea;
 }
@@ -78,11 +74,14 @@ th, td {
 	border-width: 0 1px 1px 0;
 	padding: 0.4em;
 }
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
 ::selection {
 	background: #b3d4fc;
 	text-shadow: none;
 }
-
 
 /*------------------------------------*\
 	#Headings
@@ -117,18 +116,13 @@ th, td {
 	#List
 \*------------------------------------*/
 
-.list-bullet li {
-	padding: 4px 0;
-	display: list-item;
-}
-.list-padding li {
-	padding: 4px 0;
-}
 .list-bordered li {
-	border-bottom: solid 1px #ededed;
+	padding-right: 10px;
+	border-right: solid 1px #ccc;
 }
-.list-clearfix {
-	overflow: hidden;
+.list-bordered li:last-child {
+	padding-right: 5px;
+	border-right: none;
 }
 
 /*------------------------------------*\
@@ -144,6 +138,12 @@ input[type="search"] {
 /*------------------------------------*\
 	#Misc Classes
 \*------------------------------------*/
+
+.media-fluid {
+	width: 100%;
+	height: auto;
+	display: block;
+}
 
 /*------------------------------------*\
 	#Underscores
