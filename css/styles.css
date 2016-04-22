@@ -129,11 +129,6 @@ th, td {
 	#Forms
 \*------------------------------------*/
 
-input[type="search"] {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-appearance: none;
-}
 
 /*------------------------------------*\
 	#Misc Classes
