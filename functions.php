@@ -18,6 +18,11 @@ function dhali_scripts() {
 	wp_enqueue_script( 'google-fonts', get_template_directory_uri() . '/js/google-fonts.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'dhali_scripts' );
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
 	
 /**
  * Load Simplegrid shortcode generator file.
