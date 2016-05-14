@@ -3,6 +3,15 @@ function dhali_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 */
 	add_editor_style( array( 'css/editor-style.css' ) );
+	
+	add_theme_support( 'custom-logo', array(
+	'height'      => 100,
+	'width'       => 400,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );
+
 }
 add_action( 'after_setup_theme', 'dhali_setup' );
 
