@@ -47,3 +47,12 @@ require get_template_directory() . '/inc/required-plugins.php';
  * Enable automatic updates for plugins
  */
 add_filter('auto_update_plugin', '__return_true');
+
+/**
+ * Add Class to the_custom_logo function html output.
+ */
+add_filter('get_custom_logo', 'custom_logo_output', 10);
+function custom_logo_output( $html ){
+	$html = str_replace( 'custom-logo-link', 'custom-logo-link any-class-you-want', $html );
+	return $html;
+}
