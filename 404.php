@@ -72,15 +72,19 @@ get_header(); ?>
 										<div class='panel-body'>
 											<div class='panel-heading'><h2 class="widget-title text-uppercase panel-title"><?php esc_html_e( 'Most Used Categories', 'dhali' ); ?></h2></div>
 											<ul>
-												<?php
-													wp_list_categories( array(
-														'orderby'    => 'count',
-														'order'      => 'DESC',
-														'show_count' => 1,
-														'title_li'   => '',
-														'number'     => 10,
-													) );
-												?>
+							<?php
+									the_widget( 'WP_Widget_Archives',
+										array(
+											'title' => __('Archives'),
+											'count' => 1,
+										),
+										array(
+											'before_title'	=> "<h5 class='widget-title text-uppercase'>",
+											'after_title'		=> "</h5>",
+											'before_widget' => "<div class='widget'>",
+											'after_widget'	=> "</div>"
+									));
+								?>
 											</ul>
 										</div>
 									</div>
