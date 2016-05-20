@@ -15,11 +15,10 @@ get_header(); ?>
 
 				<section class="error-404 not-found">
 					<header class="page-header">
-						<h1 class="page-title text-uppercase"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dhali' ); ?></h1>
+						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dhali' ); ?></h1>
 					</header><!-- .page-header -->
 
 					<div class="page-content">
-
 						<div class="well form-inline">
 							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'dhali' ); ?></p>
 							<?php get_search_form(); ?>
@@ -42,60 +41,48 @@ get_header(); ?>
 							</div><!-- .col -->
 
 							<div class="col-sm-6">
-								<div class="widget widget_categories">
-									<div class='panel panel-default'>
-										<div class='panel-body'>
-											<div class='panel-heading'>
-												<h2 class="widget-title text-uppercase panel-title"><?php esc_html_e( 'Most Used Categories', 'dhali' ); ?></h2>
-											</div>
-											<ul>
-												<?php
-													wp_list_categories( array(
-														'orderby'    => 'count',
-														'order'      => 'DESC',
-														'show_count' => 1,
-														'title_li'   => '',
-														'number'     => 10,
-													) );
-												?>
-											</ul>
+								<div class='panel panel-default'>
+									<div class='panel-body'>
+										<div class='panel-heading'>
+											<h2 class="widget-title text-uppercase panel-title"><?php esc_html_e( 'Most Used Categories', 'dhali' ); ?></h2>
 										</div>
+										<ul>
+											<?php
+												wp_list_categories( array(
+													'orderby'    => 'count',
+													'order'      => 'DESC',
+													'show_count' => 1,
+													'title_li'   => '',
+													'number'     => 10,
+												) );
+											?>
+										</ul>
 									</div>
-								</div><!-- .widget -->
+								</div>
 							</div><!-- .col -->
 						</div><!-- .row -->
 
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="widget widget_categories">
-									<div class='panel panel-default'>
-										<div class='panel-body'>
-											<div class='panel-heading'><h2 class="widget-title text-uppercase panel-title"><?php esc_html_e( 'Most Used Categories', 'dhali' ); ?></h2></div>
-											<ul>
-							<?php
-									the_widget( 'WP_Widget_Archives',
-										array(
-											'title' => __('Archives'),
-											'count' => 1,
-										),
-										array(
-											'before_title'	=> "<h5 class='widget-title text-uppercase'>",
-											'after_title'		=> "</h5>",
-											'before_widget' => "<div class='widget'>",
-											'after_widget'	=> "</div>"
-									));
-								?>
-											</ul>
-										</div>
-									</div>
-								</div><!-- .widget -->
+								<?php
+										the_widget( 'WP_Widget_Archives',
+											array(
+												'count' => 1,
+											),
+											array(
+												'before_title'	=> "<div class='panel-heading'><h2 class='widget-title text-uppercase panel-title'>",
+												'after_title'		=> "</h2></div>",
+												'before_widget' => "<div class='panel panel-default'><div class='panel-body'>",
+												'after_widget'	=> "</div></div>"
+										));
+									?>
 							</div><!-- .col -->
 
 							<div class="col-sm-6">
 								<?php
 									the_widget( 'WP_Widget_Tag_Cloud',
 										array(
-											'title'					=> "Tags Used"
+											'title' => __('Tags Used'),
 										),
 										array(
 											'before_title'	=> "<div class='panel-heading'><h2 class='widget-title text-uppercase panel-title'>",
