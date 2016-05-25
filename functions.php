@@ -56,3 +56,12 @@ function custom_logo_output( $html ){
 	$html = str_replace( 'custom-logo-link', 'custom-logo-link any-class-you-want', $html );
 	return $html;
 }
+
+/**
+ * Enable default taxonomies for Pages and Attachments
+ */
+function dhali_register_taxonomy() {
+	register_taxonomy_for_object_type( 'category', 'attachment' );
+	register_taxonomy_for_object_type( 'category', 'page' );
+}
+add_action( 'init', 'dhali_register_taxonomy' );
