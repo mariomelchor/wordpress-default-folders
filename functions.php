@@ -44,6 +44,11 @@ require get_template_directory() . '/inc/simplegrid.php';
 require get_template_directory() . '/inc/required-plugins.php';
 
 /**
+ * Load Default Settings for Meta Slider.
+ */
+require get_template_directory() . '/inc/meta-slider.php';
+
+/**
  * Enable automatic updates for plugins
  */
 add_filter('auto_update_plugin', '__return_true');
