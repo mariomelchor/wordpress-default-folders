@@ -25,6 +25,7 @@ function dhali_scripts() {
 	wp_enqueue_style( 'wg-style', get_template_directory_uri() . '/css/styles.css');
 
 	wp_enqueue_script( 'google-fonts', get_template_directory_uri() . '/js/google-fonts.js', array(), '', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'dhali_scripts' );
 
