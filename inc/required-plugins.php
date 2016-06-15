@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Default Settings for Meta Slider Plugin.
+ *
+ * @package dhali
+ */
+
 add_action('admin_notices', 'showAdminMessages');
 
 function showAdminMessages() {
