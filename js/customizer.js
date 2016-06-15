@@ -48,7 +48,7 @@
 
 	wp.customize( 'address_setting', function( value ) {
 		value.bind( function( to ) {
-			$( 'address p' ).html( to );
+			$( '.address p' ).html( to );
 		} );
 	} );
 
