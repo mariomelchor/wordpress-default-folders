@@ -10,7 +10,7 @@ function dhali_slider_parameters( $params ) {
 	$params['type']		= 'flex';
 	$params['width']	= 1920;
 	$params['height']	= 570;
-	$params['effect'	= 'fade';
+	$params['effect']	= 'fade';
 	$params['navigation'] 	= true;
 	$params['center'] 	= true;
 	$params['fullWidth'] 	= true;
