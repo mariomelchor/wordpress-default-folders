@@ -71,3 +71,12 @@ function dhali_register_taxonomy() {
 	register_taxonomy_for_object_type( 'category', 'page' );
 }
 add_action( 'init', 'dhali_register_taxonomy' );
+
+
+/**
+ * Add Note to Featured Image Meta Box
+ */
+add_filter( 'admin_post_thumbnail_html', 'dhali_post_thumbnail_html');
+function dhali_post_thumbnail_html( $content ) {
+	return $content .= '<p>Image Size: 1920px by 570px</p><small><em>Image Size should be higher than the dimensions noted above.</em></small>';
+}
