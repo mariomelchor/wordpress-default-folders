@@ -64,18 +64,15 @@ textarea {
 \*------------------------------------*/
 
 .site-sidebar .search-form {
-	padding: 1.25rem;
-	border-radius: 3px;
 	background: #ededed;
 }
-.site-sidebar .widget_search label {
+.search-form label {
 	display: block;
 }
-.site-sidebar .widget_search .search-field,
-.site-sidebar .widget_search .search-submit {
+.search-form .search-field,
+.search-form .search-submit {
 	width: 100%;
 }
-
 
 /*------------------------------------*\
 	#List
