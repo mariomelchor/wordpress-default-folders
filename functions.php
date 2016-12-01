@@ -1,9 +1,11 @@
+<?php
+
 function dhali_setup() {
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 */
 	add_editor_style( array( 'css/editor-style.css' ) );
-	
+
 	add_theme_support( 'custom-logo', array(
 	'height'      => 100,
 	'width'       => 400,
@@ -33,7 +35,7 @@ add_action( 'wp_enqueue_scripts', 'dhali_scripts' );
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-	
+
 /**
  * Load Simplegrid shortcode generator file.
  */
@@ -78,5 +80,5 @@ add_action( 'init', 'dhali_register_taxonomy' );
  */
 add_filter( 'admin_post_thumbnail_html', 'dhali_post_thumbnail_html');
 function dhali_post_thumbnail_html( $content ) {
-	return $content .= '<p>Image Size: 1920px by 570px</p><small><em>Image Size should be higher than the dimensions noted above.</em></small>';
+	return $content .= '<p>1600px by 600px<br><small><em>Recommended Image Dimensions</em></small></p>';
 }
