@@ -74,11 +74,10 @@ function dhali_register_taxonomy() {
 }
 add_action( 'init', 'dhali_register_taxonomy' );
 
-
 /**
  * Add Note to Featured Image Meta Box
  */
-add_filter( 'admin_post_thumbnail_html', 'dhali_post_thumbnail_html');
 function dhali_post_thumbnail_html( $content ) {
-	return $content .= '<p>1600px by 600px<br><small><em>Recommended Image Dimensions</em></small></p>';
+	return $content .= '1400x600px - <small><em>Recommended Image Dimensions</em></small>';
 }
+add_filter( 'admin_post_thumbnail_html', 'dhali_post_thumbnail_html');
