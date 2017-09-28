@@ -236,6 +236,15 @@ textarea {
 	height: auto;
 	display: block;
 }
+@media ( max-width: 768px ) {
+	.alignleft,
+	.alignright  {
+		display: block;
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
 
 /*------------------------------------*\
 	#Underscores
