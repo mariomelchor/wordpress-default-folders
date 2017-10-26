@@ -569,3 +569,30 @@ textarea {
 	background-color: #398439;
 	border-color: #255625;
 }
+
+/*------------------------------------*\
+  #Gravity Forms
+\*------------------------------------*/
+
+.gform_wrapper .gform_footer input.button {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #000;
+  padding: 10px 20px;
+  background-color: $brand-color;
+  border-color: $brand-color;
+  background-image: none;
+}
+
+.gform_wrapper .gform_footer input.button:hover {
+  border-color: $grey;
+  background-color: $grey;
+  background-position: 0 -15px;
+}
+
+.gform_wrapper .gform_footer input.button:focus,
+.gform_wrapper .gform_footer input.button:active {
+  border-color: $brand-color;
+  background-color: $brand-color;
+  background-position: 0 -15px;
+}
