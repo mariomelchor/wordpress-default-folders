@@ -164,14 +164,9 @@ a:hover, a:active {
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
-.site-main .post-navigation,
-.project-navigation .post-navigation {
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
-}
-
-.project-navigation .post-navigation {
-	margin: 0;
 }
 
 .comment-navigation .nav-previous,
@@ -189,13 +184,6 @@ a:hover, a:active {
 	width: 50%;
 }
 
-.project-navigation .post-navigation .nav-previous {
-	border-right: solid 2px #e9e9e9;
-}
-.project-navigation .post-navigation .nav-next {
-	border-left: solid 2px #e9e9e9;
-}
-
 .posts-navigation a,
 .post-navigation a,
 .comment-navigation a {
@@ -206,17 +194,6 @@ a:hover, a:active {
   padding: 20px;
   display: block;
   background: $light-grey;
-}
-
-.project-navigation .post-navigation a {
-	text-align: center;
-  background: #fff;
-	border-top: solid 2px #e9e9e9;
-}
-
-.project-navigation .post-navigation a:hover,
-.project-navigation .post-navigation a:focus {
-	background: $light-grey;
 }
 
 .posts-navigation .nav-previous a:before,
