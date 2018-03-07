@@ -24,68 +24,61 @@ get_header(); ?>
 					</div><!-- .well -->
 
 					<div class="row">
-						<div class="col-sm-6">
-							<?php
-								the_widget( 'WP_Widget_Recent_Posts',
-									array(
-										'number' => 5,
-									),
-									array(
-										'before_title'	=> "<div class='panel-heading'><h3 class='panel-title text-uppercase'>",
-										'after_title'		=> "</h3></div><div class='panel-body'>",
-										'before_widget' => "<div class='panel panel-default'>",
-										'after_widget'	=> "</div></div>"
-								));
-							?>
-						</div><!-- .col -->
+						<?php
+							the_widget( 'WP_Widget_Recent_Posts',
+								array(
+									'number' => 5,
+								),
+								array(
+									'before_title'  => "<div class='panel-heading'><h3 class='panel-title text-uppercase'>",
+									'after_title'   => "</h3></div><div class='panel-body'>",
+									'before_widget' => "<div class='col-sm-6'><div class='panel panel-default'>",
+									'after_widget'  => "</div></div></div>"
+							));
+						?>
 
-						<div class="col-sm-6">
-							<?php
-								the_widget( 'WP_Widget_Categories',
-									array(
-										'count' => 1,
-									),
-									array(
-										'before_title'	=> "<div class='panel-heading'><h3 class='panel-title text-uppercase'>",
-										'after_title'		=> "</h3></div><div class='panel-body'>",
-										'before_widget' => "<div class='panel panel-default'>",
-										'after_widget'	=> "</div></div>"
-								));
-							?>
-						</div><!-- .col -->
-					</div><!-- .row -->
+						<?php
+							the_widget( 'WP_Widget_Categories',
+								array(
+									'count' => 1,
+								),
+								array(
+									'before_title'  => "<div class='panel-heading'><h3 class='panel-title text-uppercase'>",
+									'after_title'   => "</h3></div><div class='panel-body'>",
+									'before_widget' => "<div class='col-sm-6'><div class='panel panel-default'>",
+									'after_widget'  => "</div></div></div>"
+							));
+						?>
+        	</div><!-- .row -->
 
 					<div class="row">
-						<div class="col-sm-6">
-							<?php
-								the_widget( 'WP_Widget_Archives',
-									array(
-										'count' => 1,
-									),
-									array(
-										'before_title'	=> "<div class='panel-heading'><h3 class='panel-title text-uppercase'>",
-										'after_title'		=> "</h3></div><div class='panel-body'>",
-										'before_widget' => "<div class='panel panel-default'>",
-										'after_widget'	=> "</div></div>"
-								));
-							?>
-						</div><!-- .col -->
+						<?php
+							the_widget( 'WP_Widget_Archives',
+								array(
+									'count' => 1,
+								),
+								array(
+									'before_title'  => "<div class='panel-heading'><h3 class='panel-title text-uppercase'>",
+									'after_title'   => "</h3></div><div class='panel-body'>",
+									'before_widget' => "<div class='col-sm-6'><div class='panel panel-default'>",
+									'after_widget'  => "</div></div></div>"
+							));
+						?>
 
-						<div class="col-sm-6">
-							<?php
-								the_widget( 'WP_Widget_Tag_Cloud',
-									array(
-										'title' => __('Tags Used'),
-									),
-									array(
-										'before_title'	=> "<div class='panel-heading'><h3 class='widget-title text-uppercase panel-title'>",
-										'after_title'		=> "</h3></div><div class='panel-body'>",
-										'before_widget' => "<div class='panel panel-default'>",
-										'after_widget'	=> "</div></div>"
-								));
-							?>
-						</div><!-- .col -->
+						<?php
+							the_widget( 'WP_Widget_Tag_Cloud',
+								array(
+									'title' => __('Tags Used'),
+								),
+								array(
+									'before_title'  => "<div class='panel-heading'><h3 class='widget-title text-uppercase panel-title'>",
+									'after_title'   => "</h3></div><div class='panel-body'>",
+									'before_widget' => "<div class='col-sm-6'><div class='panel panel-default'>",
+									'after_widget'  => "</div></div></div>"
+							));
+						?>
 					</div><!-- .row -->
+
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
