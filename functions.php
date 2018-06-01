@@ -44,13 +44,13 @@ require get_template_directory() . '/inc/meta-slider.php';
 add_filter('auto_update_plugin', '__return_true');
 
 /**
- * Add Class to the_custom_logo function html output.
+ * Replaces classes to the_custom_logo function html output.
  */
-add_filter('get_custom_logo', 'custom_logo_output', 10);
-function custom_logo_output( $html ){
-	$html = str_replace( 'custom-logo-link', 'custom-logo-link any-class-you-want', $html );
+function dhali_custom_logo_output( $html ){
+	$html = str_replace( array('custom-logo-link', 'custom-logo'), array('navbar-brand py-0', 'img-fluid'), $html );
 	return $html;
 }
+add_filter('get_custom_logo', 'dhali_custom_logo_output', 10);
 
 /**
  * Enable default taxonomies for Pages and Attachments

@@ -1,3 +1,5 @@
+<?php
+
 if ( ! function_exists( 'dhali_the_custom_logo' ) ) :
 /**
  * Displays the optional custom logo.
@@ -7,7 +9,7 @@ function dhali_the_custom_logo() {
   if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
     the_custom_logo();
   } else {
-    echo '<a href="'. get_bloginfo('url' ) .'" class="custom-logo-link"><img width="440" height="120" src="http://via.placeholder.com/440x120" class="custom-logo img-responsive" alt="'. get_bloginfo( 'name' ) .'"></a>';
+    echo '<a href="'. get_bloginfo('url' ) .'" class="navbar-brand py-0"><img width="300" height="100" src="http://via.placeholder.com/300x100" class="img-fluid" alt="'. get_bloginfo( 'name' ) .'"></a>';
   }
 }
 endif;
